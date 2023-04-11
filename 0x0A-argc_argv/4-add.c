@@ -10,18 +10,20 @@
  * Return: 1 if the string contains only digits, 0 otherwise
  */
 
-int is_number(char *str) 
+int is_number(char *str)
 {
-	unsigned int i;i = 0;
+	unsigned int i;
+	i = 0;
 	while (i < strlen(str))
+
 	{
 		if (!isdigit(str[i]))
 		{
-			return 0;
+			return (0);
 		}
 		i++;
 	}
-	return 1;
+	return (1);
 }
 
 /**
@@ -32,13 +34,14 @@ int is_number(char *str)
  * Return: 0 on success, 1 on error
  */
 
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
 	int i;
 	int num;
 	int total = 0;
 	i = 1;
 	while (i < argc)
+
 	{
 		if (is_number(argv[i]))
 		{
@@ -48,10 +51,10 @@ int main(int argc, char *argv[])
 		else
 		{
 			printf("Error\n");
-			return 1;
+			return (1);
 		}
 		i++;
 	}
 	printf("%d\n", total);
-	return 0;
+	return (0);
 }
