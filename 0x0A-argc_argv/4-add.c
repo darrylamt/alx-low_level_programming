@@ -13,11 +13,16 @@
 int is_number(char *str)
 {
 	unsigned int i;
+
 	i = 0;
+
+
 	while (i < strlen(str))
+
 
 	{
 		if (!isdigit(str[i]))
+
 		{
 			return (0);
 		}
@@ -39,11 +44,16 @@ int main(int argc, char *argv[])
 	int i;
 	int num;
 	int total = 0;
+
 	i = 1;
+
+
 	while (i < argc)
+
 
 	{
 		if (is_number(argv[i]))
+
 		{
 			num = atoi(argv[i]);
 			total += num;
