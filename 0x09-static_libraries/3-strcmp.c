@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * @s1: The first string to compare.
- * @s2: The second string to compare.
+ * _strcmp - compares the values of two strings
+ * @s1: pointer to the first string to be compared
+ * @s2: pointer to the second string to be compared
  *
  * Return: An integer less than, equal to, or greater than zero if s1 is
  *         found, respectively, to be less than, to match, or be greater
