@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * make_grid - creates a 2D array with the specified dimensions
+ * alloc_grid - creates a 2D array with the specified dimensions
  * @width: width of the grid
  * @height: height of the grid
  * Return: pointer to the 2D array, or NULL if memory allocation failed
